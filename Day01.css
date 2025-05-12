@@ -2,3 +2,17 @@ body{
     /* background-color: rgb(49, 116, 250); */
     border: solid 4px black ;
 }
+h1:hover{
+    color: red;
+    text-decoration: underline;
+
+
+}
+
+.flex{
+    display: flex;
+
+    /* gap: 33%; */
+    justify-content: center;
+
+}

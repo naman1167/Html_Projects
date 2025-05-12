@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title></title>  
+    <title>Landing Page</title>  
     <link rel="stylesheet" href="Day01.css">
 </head>
 <style>
@@ -43,13 +43,41 @@ h1{
 nav{
     text-align: end;
 }
+tr:hover{
+    background-color: rgb(88, 206, 112);
+   
+}
+.Sign:hover{
+    /* background-color: rgb(255, 0, 0); */
+    font-size: larger;
+
+}
+.Con:hover{
+    /* background-color: rgb(255, 0, 0);  */
+    font-size: larger;  
+
+}
+.Home:hover{
+    /* background-color: rgb(255, 0, 0); */
+    font-size: larger;
+}
+.About:hover{
+    /* background-color: rgb(255, 0, 0); */
+    font-size: larger;
+}
+tr:hover{
+    background-color: rgb(28, 165, 210);
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(228, 238, 26);
+}
 </style>
 <body> 
     <header>
-        <nav style="margin: 10;"><a href="http://" target="_blank" rel="noopener noreferrer">About Us</a> &nbsp;    
-                <a href="http://" target="_blank" rel="noopener noreferrer">Signup</a>&nbsp;        
-                <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>&nbsp;         
-                <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>   &nbsp;     
+        <nav style="margin: 10;"><a class="About" href="http://" target="_blank" rel="noopener noreferrer">About Us</a> &nbsp;    
+                <a class="Sign" href="#Signup" rel="noopener noreferrer">Signup</a>&nbsp;        
+                <a class="Con" href="http://" target="_blank" rel="noopener noreferrer">Contact</a>&nbsp;         
+                <a  class="Home" href="http://" target="_blank" rel="noopener noreferrer">Home</a>   &nbsp;     
             
         </nav>
         <h1>Prime Video</h1>
@@ -95,9 +123,18 @@ nav{
                 <li>Naman</li>
                 <li>Sethi</li>
             </ol>
+            <blockquote cite="https://www.wikipedia.org/">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                <footer>Author</footer>
+            </blockquote>
             <footer>
                 copyright &copy; 2023 Prime Video. All rights reserved.
             </footer>
+            <div class="flex">
+                <img src="https://images.unsplash.com/photo-1742836531256-87aa58fd35a9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" height ="100" srcset="">
+                <img src="https://images.unsplash.com/photo-1746311372686-e164b0bcb333?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" height="100" alt="" srcset="">
+                <img src="https://images.unsplash.com/photo-1746950862509-959ed92c42b8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" height="100" alt="">
+            </div>
         </body>
     </main>
 </html>
