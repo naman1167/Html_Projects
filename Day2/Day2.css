@@ -1,0 +1,15 @@
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 300px;
+
+}
+.div{
+    border: solid ;
+    width: 60px;
+    margin-left: 50%;
+}
+.div:hover{
+    background-color: aqua;
+}
