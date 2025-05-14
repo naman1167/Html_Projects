@@ -2,13 +2,14 @@
 .grid{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    gap: 300px;
+    gap: 90px;
 
 }
 .div{
     border: solid ;
     width: 60px;
     margin-left: 50%;
+    margin-top: 100px;
 }
 .div:hover{
     background-color: aqua;

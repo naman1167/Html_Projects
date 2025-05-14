@@ -1,0 +1,1 @@
+alert("Hey it is Day 2 ")

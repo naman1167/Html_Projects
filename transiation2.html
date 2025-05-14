@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear; transition-delay: 2s}
+#div2 {
+animation-name: expmale ;
+animation-duration: 3s; background-color: aqua;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;;}
+
+@keyframes example{
+    from {background-color: aqua;} to
+    {background-color: blue;}
+}
+/* div:hover {
+  width: 300px;
+  /* transform: rotate(120deg); */
+/* } */ */
+</style>
+</head>
+<body>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div id="div1">linear i AM the one With Delay !!!</div><br>
+<div id="div2" style="text-align: center;">ease</div><br>
+<div id="div3">ease-in</div><br>
+<div id="div4">ease-out</div><br>
+<div id="div5">ease-in-out</div><br>
+
+</body>
+</html>
