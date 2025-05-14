@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.upper{
+    background : rgb(0, 179, 255) ;
+    width: 1469px;
+    height: 300px;
+}
+nav{
+   
+    text-align: end;
+    margin-right: 50;
+    color: white;
+  
+}
+h1{
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+
+}
+
+nav:hover{
+    font-size: larger;
+    
+    
+}
+h3{
+    border: 2px solid rgb(206, 202, 202);
+    width: 85px;
+    border-radius: 250px;
+    background-color: beige;
+    margin-left: 700px;
+    margin-top: 100px;
+    text-align: center;
+}
+h3:hover{
+    background : linear-gradient(rgb(49, 214, 247) , rgb(3, 220, 235) white);
+    font-size: larger;
+    box-shadow: 30px 30px 50px;
+}
+.div1{
+    background-color: rgb(253, 217, 217);
+    height:300px ;
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 60px;
+    border-radius: 50px;
+    
+}
+.div2{
+    height:300px ;
+    width: 400px;
+    background:rgb(253, 217, 217);
+    margin: 80px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.down{
+    display: flex;
+    gap: 100px;
+   
+}
+.div3{
+    float: right;
+    height:300px ;
+    width: 400px;
+    background:rgb(253, 217, 217);
+    margin: 80px;
+    box-shadow: 30px;
+    border-radius: 50px;
+    
+}
+.div2:hover{
+    box-shadow: 30px 40px 50px black;
+}
+.div3:hover{
+    box-shadow: 30px 40px 50px black;
+}
+h2{
+    color: blue;
+    text-align: center;
+    
+}
+.div1:hover{
+    font-size: large;
+    box-shadow: 30px 40px 50px black;
+}
