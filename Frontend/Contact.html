@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    :root {
+      --dark-blue: #00264d;
+      --mid-blue: #0056b3;
+      --light-text: #fff;
+      --box-bg: #ffffff;
+      --box-text: #000;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      background: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--light-text);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .form-box {
+      width: 80%;
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: var(--box-bg);
+      color: var(--box-text);
+      padding: 30px;
+      border: 2px solid #333;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-box label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .form-box input,
+    .form-box textarea,
+    .form-box button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .form-box button {
+      background-color: var(--mid-blue);
+      color: var(--light-text);
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: var(--dark-blue);
+    }
+
+    footer {
+      background-color: var(--dark-blue);
+      color: var(--light-text);
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    
+    
+  </nav>
+
+  <h1>Contact Us</h1>
+
+  <div class="form-box">
+    <form action="#" method="post">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    ©Copyright Reserved
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navigation */
+  nav {
+    background: linear-gradient(to right, #001F3F, #007CF0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #0056b3;
+  }
+
+h1{
+    text-align: center;
+
+}
+input:hover{
+    font-size: larger;
+}
+input{
+    font-size: larger;
+    /* margin-left:100px ; */
+    text-align: center;
+    
+
+}
+.form{
+    font-size: larger;
+    margin-top: 100px;
+    padding: auto;
+    /* width: 75%; */
+    border: 2px solid black;
+    border-radius: 100px;
+    overflow: auto;
+}
+
+.email{
+    margin-top: 40px;
+}
+.number{
+    text-align: center;
+}

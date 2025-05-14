@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LearnHub Sign Up</title>
+  <style>
+    :root {
+      --dark-blue: #00264d;
+      --mid-blue: #0056b3;
+      --light-text: #fff;
+      --box-bg: #ffffff;
+      --box-text: #000;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    nav {
+      background: linear-gradient(to right, var(--dark-blue), var(--mid-blue));
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--light-text);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .form-box {
+      width: 80%;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: var(--box-bg);
+      color: var(--box-text);
+      padding: 30px;
+      border: 2px solid #333;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form-box label {
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .form-box input,
+    .form-box button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .form-box button {
+      background-color: var(--mid-blue);
+      color: var(--light-text);
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background-color: var(--dark-blue);
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+
+    footer {
+      background-color: var(--dark-blue);
+      color: var(--light-text);
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="file:///Users/namansethi/Desktop/Code/html_css_129/Workshop/Day3/index.html">Home</a>
+    <a href="file:///Users/namansethi/Desktop/Code/html_css_129/Workshop/Day3/Contact.html">Contact Us</a>
+    
+  </nav>
+
+  <h1>Sign Up</h1>
+
+  <div class="form-box">
+    <form id="signupForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required />
+
+      <p class="error" id="errorMsg"></p>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+
+  <footer>
+    ©Copyright Reserved
+  </footer>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      const errorMsg = document.getElementById('errorMsg');
+
+      errorMsg.textContent = '';
+
+      const emailRegex = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!name || !email || !password || !confirmPassword) {
+        errorMsg.textContent = "Please fill in all fields.";
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        errorMsg.textContent = "Please enter a valid email address.";
+        return;
+      }
+
+      if (password.length < 6) {
+        errorMsg.textContent = "Password must be at least 6 characters.";
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        errorMsg.textContent = "Passwords do not match.";
+        return;
+      }
+
+      alert("Sign Up Successful!");
+      // Optionally, submit the form with: this.submit();
+    });
+  </script>
+
+</body>
+</html>
