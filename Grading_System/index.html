@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        var rows = document.querySelectorAll("#studentTable tbody tr");
+      
+        for (var i = 0; i < rows.length; i++) {
+          var marks = parseInt(rows[i].cells[1].innerText);
+          if (marks < 80) {
+            rows[i].style.backgroundColor = "lightcoral";
+          }
+        }
+      </script>
+    <div class="table">
+        <table id="studentTable" border="1">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Marks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Naman</td><td>88</td></tr>
+              <tr><td>Soham</td><td>76</td></tr>
+              <tr><td>Piyush</td><td>92</td></tr>
+              <tr><td>Shiva</td><td>65</td></tr>
+              <tr><td>Rayan</td><td>67</td></tr>
+            </tbody>
+          </table>
+          
+          
+    </div>
+
+</body>
+</html>
