@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sx4LxeRswG8R8Br8xcsWaAHaCU%26pid%3DApi&f=1&ipt=dda78531ea0ec92f0630006f53420cee25fbf76ecbef95f9f0cd71770488ffc9&ipo=images');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+      flex-wrap: wrap;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .card {
+      width: 300px;
+      padding: 20px;
+      background-color: rgb(255, 217, 167);
+      border: 2px solid black;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+      text-align: center;
+      position: relative;
+    }
+
+    .card:hover {
+      box-shadow: 4px 4px 10px black;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 8px 16px;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .read-more:hover {
+      background-color: #555;
+    }
+
+    .more-text {
+      display: none;
+      margin-top: 10px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .copy {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <h2>Technology</h2>
+      <p>
+        Early blogs were manually updated parts of websites. In 1995, the "Online Diary" on the Ty, Inc. website gave the appearance of a live diary with multiple entries per day.
+      </p>
+      <div class="more-text">
+        Blogging evolved with platforms like Blogger and WordPress. These tools allowed anyone with minimal technical skills to create and share content globally — revolutionizing online publishing.
+      </div>
+      <span class="read-more" onclick="toggleContent(this)">Read More</span>
+    </section>
+
+    <section class="card">
+      <h2>Rise in Popularity</h2>
+      <p>
+        Blogging gained popularity in 1999 with platforms like Open Diary and LiveJournal. Open Diary was the first to allow reader comments, creating blog communities.
+      </p>
+      <div class="more-text">
+        By the mid-2000s, blogs became essential media platforms, with political blogs, fashion blogs, tech blogs, and personal blogs dominating the web. Today, millions of blog posts are published daily.
+      </div>
+      <span class="read-more" onclick="toggleContent(this)">Read More</span>
+    </section>
+  </main>
+
+  <footer class="copy">
+    2025 &copy; Naman Sethi
+  </footer>
+
+  <script>
+    function toggleContent(button) {
+      const moreText = button.previousElementSibling;
+      if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        button.textContent = "Read More";
+      } else {
+        moreText.style.display = "block";
+        button.textContent = "Read Less";
+      }
+    }
+  </script>
+</body>
+</html>

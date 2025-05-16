@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.sx4LxeRswG8R8Br8xcsWaAHaCU%26pid%3DApi&f=1&ipt=dda78531ea0ec92f0630006f53420cee25fbf76ecbef95f9f0cd71770488ffc9&ipo=images');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: orange;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 60px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    .card {
+      width: 70%;
+      padding: 20px;
+      background-color: rgb(255, 217, 167);
+      border: 2px solid black;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card:hover {
+      box-shadow: 4px 4px 10px black;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .confirmation {
+      display: none;
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .copy {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <h2>We'd love to hear from you!</h2>
+      <p>Feel free to reach out with any questions, feedback, or just to say hello.</p>
+      <form id="contactForm" onsubmit="return showConfirmation(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="confirmation" id="confirmationMessage">Thank you! Your message has been sent.</div>
+    </section>
+  </main>
+  
+  <footer class="copy">
+    2025 &copy; Naman Sethi
+  </footer>
+
+  <script>
+    function showConfirmation(event) {
+      event.preventDefault();
+      document.getElementById('confirmationMessage').style.display = 'block';
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
